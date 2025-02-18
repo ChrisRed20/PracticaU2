@@ -11,3 +11,11 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Practica_1';
 }
+
+Notification.requestPermission().then((result) => {
+  if (result === 'granted') {
+    navigator.serviceWorker.ready.then((registration) => {
+      registration.showNotification('Hello, World!');
+    });
+  }
+});
