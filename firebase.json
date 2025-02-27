@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/practica-1/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
